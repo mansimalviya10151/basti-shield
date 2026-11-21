@@ -1,16 +1,26 @@
-# React + Vite
+# 🛡️ Basti-Shield
+**Two-Stage Satellite Risk Assessment & Portable Digital Address System for Informal Settlements**
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Basti-Shield bridges geospatial satellite telemetry with portable household identity so migrant families and informal settlements gain climate-risk protection and uninterrupted access to civic services.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🚀 Key Features
+- **Two-Stage Risk Screening:** Combines Stage 1 satellite thermal reflectance and DEM (Digital Elevation Model) low-basin anomaly detection with Stage 2 ground verification to separate vulnerable residential clusters from industrial tin roofs.
+- **Live NavIC / GNSS Anchor & Telemetry:** Fetches real-time elevation, ambient/tin-roof surface heat, and nearby high-ground flood shelters and health/Anganwadi centers via Open-Meteo and OpenStreetMap APIs (with fast offline fallback).
+- **Cool-Roof Thermal Mitigation Simulator:** Models the immediate **-5.4°C** surface heat reduction achieved through solar-reflective cool-roof coatings.
+- **Portable Multilingual QR Digital ID (EN / हिन्दी):** Generates a dynamic QR household pass that re-anchors to new worksite coordinates upon migration without breaking family identity, complete with one-click **Print Pass** support.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack
+- **Frontend:** React, Vite, Lucide Icons
+- **Mapping & Geospatial:** Leaflet, React-Leaflet, Esri World Imagery
+- **APIs & Identity:** Open-Meteo Elevation/Weather API, Overpass (OpenStreetMap) API, `qrcode.react`
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 💻 Run Locally
+```bash
+npm install
+npm run dev
